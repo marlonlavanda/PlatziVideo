@@ -1,11 +1,11 @@
 import React from 'react';
+import '../assets/styles/components/Categories.scss';
 
-const Categories = () => {
-  return (
-    <div className='categories'>
-      <h3>Mi lista</h3>
-    </div>
-  );
-};
+const Categories = ({ children }) => (
+  <div className='categories'>
+    <h3 className='categories__title'>Mi lista</h3>
+    {children}
+  </div>
+);
 
 export default Categories;
