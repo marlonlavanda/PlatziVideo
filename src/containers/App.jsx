@@ -33,9 +33,7 @@ const App = () => {
 
       <Categories title='Originales de Platzi Video'>
         <Carousel>
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
+          { initalState.originals?.map((item) => <CarouselItem key={item.id} {...item} />)}
         </Carousel>
       </Categories>
 
